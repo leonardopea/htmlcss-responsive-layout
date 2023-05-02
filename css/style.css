@@ -13,28 +13,20 @@ header{
     max-width: 600px;
    
 }
+.left_logo{
+    padding-top: 10px;
+}
+
 
 .header_flex{
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
-}
-.left_logo, .right_menu{
-    height: 100px;
-    background-color: yellow;
-    width: 100px;
+    align-items: center;
 }
 
-.hamburger{
-    background-color: green;
-    width: 100%;
-    height: 100px;
-}
 
 .extended_menu{
-    background-color: blueviolet;
-    width: 100%;
-    height: 100px;
     display: none;
 }
 
@@ -47,14 +39,63 @@ header{
     
 }
 .col_33, .col_double{
-    height: 100px;
-    background-color: aqua;
-    margin: 10px;
+    background-color: rgb(141, 180, 216);
+    margin: 10px 10px 0px 10px;
+
     width: calc(100% - 20px);
+    border-radius: 10px;
+    padding: 10px 20px 0px 20px;
+    text-align: left;
+}
+.col_double{
+    display: flex;
+    flex-direction: column;
+}
+.col2_double{
+    display: flex ;
+    align-items: end;
 }
 
+.title{
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
 
+.content{
+    margin-bottom: 12px;
+}
+.bottone{
+    padding: 5px 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    border: blue;
+    max-width: 200px;
+    margin-bottom: 10px;
 
+}
+
+.phone_img{
+    width: 200px;
+}
+
+/* sezione delle immagini viola */
+
+.background_purple{
+    background-color: blueviolet;
+    height: 500px;
+}
+.row_purple{
+    display: flex;
+    flex-direction: column;
+}
+.col_purple{
+    height: 100px;
+    background-color: yellow;
+    margin: 10px;
+}
 
 
 /* TABLET */
@@ -85,8 +126,35 @@ header{
     }
     .extended_menu{
         display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+    }
+
+    .col_double{
+        display: flex;
+        flex-direction: row;
+    }
+    .bottone{
+        margin-bottom: 40px;
+    }
+    .bottone_bianco{
+        border-radius: 25px;
+        background-color: white;
+        padding: 5px;
     }
     .container{
         max-width: 950;
     }
+    .row_purple{
+        flex-direction: row;
+
+    }
+    .col_purple{
+        width: calc(100% / 2 - 100px);
+        margin:20px 50px;
+    }
+   
+
 }

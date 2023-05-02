@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>  <!-- barra alta di navigazione -->
         <div class="container">
             <div class="header_flex">
-                <div class="left_logo"></div>
+                <div class="left_logo"><img src="./img/logo.png" alt="logo"></div>
                 <div class="right_menu">
-                    <div class="hamburger"></div>
-                    <div class="extended_menu"></div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="extended_menu">
+                        <div class="col_menu">Planning</div>
+                        <div class="col_menu">Testimonials</div>
+                        <div class="col_menu">Features</div>
+                        <div class="col_menu">About Us</div>
+                        <button class="col_menu bottone_bianco">Get Started</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -24,17 +33,41 @@
     <main>    
         <div class="container"> <!-- sezione delle 5 colonne + 1 doppia -->
             <div class="row">
-                    <div class="col_double"></div>
+                    <div class="col_double">
+                        <div class="col1_double">
+                            <p class="title">Get a demo application</p>
+                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Corrupti commodi eum odio accusamus! Ut 
+                                aperiam laudantium iste eum similique hic! Debitis 
+                                laudantium iure quae pariatur voluptas, dolorum 
+                                reiciendis eos ipsa!</p>
+                            <button class="bottone">
+                                <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+                                App Store
+                            </button>
+                        </div>
+                        <div class="col2_double">
+                            <img class="phone_img" src="./img/phone.png" alt="">
+                        </div>
+                    </div>
                     <div class="col_33"></div>
                     <div class="col_33"></div>
                     <div class="col_33"></div>
                     <div class="col_33"></div>
+            </div>
         </div>
-                
+
+
+
+        <div class="background_purple">   <!--  sezione immagini viola-->
+            <div class="container">
+                <div class="row_purple">
+                    <div class="col_purple"></div>
+                    <div class="col_purple"></div>
+                </div>
+            </div>
 
         </div>
-
-
 
 
     </main>
