@@ -45,15 +45,19 @@ header{
     width: calc(100% - 20px);
     border-radius: 10px;
     padding: 10px 20px 0px 20px;
-    text-align: left;
+    
 }
+
+/* box 1  */
 .col_double{
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 .col2_double{
     display: flex ;
-    align-items: end;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .title{
@@ -64,7 +68,7 @@ header{
 }
 
 .content{
-    margin-bottom: 12px;
+    padding-bottom: 30px;
 }
 .bottone{
     padding: 5px 40px;
@@ -78,9 +82,22 @@ header{
 }
 
 .phone_img{
-    width: 200px;
+    width: 240px;
 }
 
+/* box 2  */
+.col_33{
+    text-align: center;
+}
+.col_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.disegnino{
+    margin-top: 20px;
+    font-size: 100px;
+}
 /* sezione delle immagini viola */
 
 .background_purple{
@@ -114,6 +131,10 @@ header{
     .col_33{
         width: calc(100% / 3 - 20px);
     }
+    .col2_double{
+        justify-content: flex-start;
+        
+    }
 }
     
 
@@ -136,6 +157,7 @@ header{
         display: flex;
         flex-direction: row;
     }
+
     .bottone{
         margin-bottom: 40px;
     }
