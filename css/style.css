@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* sezione della barra alta di navigazione */
 header{
     background-color: blue;
 }
@@ -16,6 +17,7 @@ header{
 .header_flex{
     display: flex;
     justify-content: space-between;
+    margin: 0 10px;
 }
 .left_logo, .right_menu{
     height: 100px;
@@ -37,14 +39,43 @@ header{
 }
 
 
+/* sezione delle 5 colonne + 1 doppia */
+
+.row{
+    display: flex;
+    flex-direction: column;
+    
+}
+.col_33, .col_double{
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+
+
+
+
 /* TABLET */
 
 @media screen and (min-width: 768px) {
     .container{
         max-width: 750px;
     }
-    
+    .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .col_double{
+        width: calc(100% / 3 * 2 - 20px);
+    }
+    .col_33{
+        width: calc(100% / 3 - 20px);
+    }
 }
+    
+
 
 /* DESKTOP */
 
